@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Document</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+ <h1 class="heading">Spending Calculator</h1>
+ <div class="container">
+  <h3 class="greet">Welcome; <input type="text" placeholder="Enter your Name.." id="name-input"></h3>
+  <form>
+   <div class="double">
+    <div class="form-harcama">
+     <label for="">Expenditure 📋</label>
+     <input type="text" placeholder="Product İnfo.." id="harcama">
+    </div>
+    <div class="form-fiyat">
+     <label for="">Price 💵</label>
+     <input type="number" placeholder="Enter price info.." id="fiyat">
+    </div>
+   </div>
+   <div class="double">
+    <div class="form-state">
+     <input type="checkbox" id="status-input">
+     <label for="">Paid</label>
+    </div>
+    <button class="ekle-btn">Add</button>
+   </div>
+
+  </form>
+  <div class="total">
+   Total Expenditure : <span id="total-info">0</span> ₺
+  </div>
+  <select name="" id="filter-select">
+   <option value="all">All</option>
+   <option value="payed">Paid</option>
+   <option value="not-payed">Not Paid</option>
+  </select>
+  <div class="list"></div>
+ </div>
+
+ <script src="main.js"></script>
+</body>
+
+</html>

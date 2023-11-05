@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", sans-serif;
+}
+body {
+  background-image: linear-gradient(0deg, #242121 0%, #aaa6a2 100%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.heading {
+  color: aqua;
+  text-shadow: 0px 0px 23px rgba(0, 216, 255, 1);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.container {
+  background-color: whitesmoke;
+  padding: 50px;
+  border-radius: 10px;
+  border: 3px solid aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 80vh;
+  padding: 100px 100px;
+  color: rgb(55, 55, 55);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.greet {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.greet input {
+  border: 1px solid aqua;
+  outline: none;
+  font-size: 15px;
+  border-radius: 30px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  width: 100%;
+}
+.double {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 50px;
+  text-align: center;
+}
+.form-harcama,
+.form-fiyat {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input {
+  outline: none;
+  padding: 10px 20px;
+  border: 1px solid aqua;
+  border-radius: 30px;
+}
+.ekle-btn {
+  background-color: aqua;
+  padding: 10px 30px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.ekle-btn:hover {
+  border: 1px solid aqua;
+  background-color: whitesmoke;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 30px 15px;
+  width: 100%;
+  min-height: 190px;
+  max-height: 350px;
+  overflow-y: auto;
+}
+.total {
+  background-color: whitesmoke;
+  padding: 10px 40px;
+  font-size: 20px;
+  border-radius: 30px;
+  border: 1px solid aqua;
+}
+.total span {
+  font-size: 25px;
+  color: darkred;
+}
+.expense {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 5px 25px;
+  border-radius: 80px;
+  font-size: 12px;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.buttons img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.expense h2:nth-child(2) {
+  color: red;
+}
+
+.payed {
+  opacity: 0.5;
+}
+.payed h2:nth-child(1) {
+  text-decoration: line-through;
+}
+.payed h2:nth-child(2) {
+  color: green;
+}
